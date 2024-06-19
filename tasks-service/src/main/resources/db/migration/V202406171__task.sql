@@ -6,8 +6,10 @@ CREATE TABLE task (
 
                       description TEXT,
 
-                      done BOOLEAN NOT NULL DEFAULT FALSE)
+                      done BOOLEAN NOT NULL DEFAULT FALSE,
                       user_id bigserial;
+                  )
+
 
 CREATE INDEX task_date_idx ON task (date);
 
